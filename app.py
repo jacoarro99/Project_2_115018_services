@@ -60,7 +60,7 @@ available_error_metrics = [
 # Available plot types for Tab 1
 available_plot_types = [
     {'label': 'Line Plot', 'value': 'line'},
-    {'label': 'Feature Scores Histogram', 'value': 'histogram_scores'},
+    {'label': 'Filter Feature Scores Histogram', 'value': 'histogram_scores'},
     {'label': 'Wrapper Feature Scores Histogram', 'value': 'histogram_wrapper'},
     {'label': 'Ensemble Feature Scores Histogram', 'value': 'histogram_ensemble'}
 ]
