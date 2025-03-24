@@ -15,6 +15,12 @@ import numpy as np
 # Define external stylesheets (Bootstrap)
 external_stylesheets = ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"]
 
+# Dash App
+app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+app.title = "North Tower Energy Forecast Dashboard"
+app.config.suppress_callback_exceptions = True  # Avoids callback warnings
+
 # Load Data
 df = pd.read_csv('nt_2019_data.csv')
 df['Date'] = pd.to_datetime(df['Date'])
