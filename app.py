@@ -324,4 +324,4 @@ def display_error_metrics(data, selected_metrics):
 
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)
