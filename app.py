@@ -71,12 +71,6 @@ available_plot_types = [
     {'label': 'Ensemble Feature Scores Histogram', 'value': 'histogram_ensemble'}
 ]
 
-# Dash App
-app = Dash(__name__, external_stylesheets=external_stylesheets)
-server = app.server
-app.title = "North Tower Energy Forecast Dashboard"
-app.config.suppress_callback_exceptions = True  # Avoids callback warnings
-
 # App Layout
 app.layout = html.Div([
     html.Div(className="container mt-4", children=[
@@ -330,4 +324,4 @@ def display_error_metrics(data, selected_metrics):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
